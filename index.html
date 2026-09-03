@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Your Name — [role/title]. Portfolio, selected work, and contact.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">YN<span>.</span></a>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav__actions">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme">
+      <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a href="#contact" class="btn btn--sm nav__cta">Let's talk</a>
+    <button id="navToggle" class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow" data-reveal>Available for freelance &amp; full-time roles</p>
+      <h1 class="hero__title" data-reveal>
+        Hi, I'm <span class="accent">Your Name</span><br>
+        I build <span class="hero__rotate" id="rotate">products</span>
+      </h1>
+      <p class="hero__sub" data-reveal>
+        A short one- or two-line pitch about who you are, what you do, and the kind of
+        problems you like solving. Swap this out for your own summary.
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a href="#work" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__social" data-reveal>
+        <a href="https://github.com/yourhandle" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="https://x.com/yourhandle" target="_blank" rel="noopener" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.5h3.31l-7.23 8.26 8.5 10.74h-6.66l-5.22-6.63-5.97 6.63H1.65l7.73-8.83L1.2 2.5h6.83l4.72 6.06 5.49-6.06Zm-1.16 17.02h1.83L7.02 4.38H5.06l12.02 15.14Z"/></svg>
+        </a>
+        <a href="mailto:you@example.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section__head" data-reveal>
+      <p class="section__kicker">About</p>
+      <h2>A bit about me</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__portrait" data-reveal aria-hidden="true">YN</div>
+      <div class="about__content" data-reveal>
+        <p>
+          Replace this paragraph with your real story: your background, what got you into
+          your field, and what drives the work you do today. Keep it conversational and specific —
+          two or three sentences is plenty.
+        </p>
+        <p>
+          Add a second paragraph here about your current focus, the kind of projects or teams
+          you enjoy working with, and what you're looking for next.
+        </p>
+        <ul class="about__facts">
+          <li><span>Location</span>City, Country</li>
+          <li><span>Focus</span>Your specialty here</li>
+          <li><span>Currently</span>Open to opportunities</li>
+        </ul>
+        <a href="resume.pdf" class="btn btn--ghost btn--sm" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section__head" data-reveal>
+      <p class="section__kicker">Skills</p>
+      <h2>What I work with</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-card" data-reveal>
+        <h3>Languages</h3>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+          <span class="tag">Python</span><span class="tag">HTML &amp; CSS</span>
+        </div>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>Frameworks &amp; Tools</h3>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">Node.js</span>
+          <span class="tag">Git</span><span class="tag">Figma</span>
+        </div>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>Also comfortable with</h3>
+        <div class="tag-row">
+          <span class="tag">APIs</span><span class="tag">Testing</span>
+          <span class="tag">CI/CD</span><span class="tag">Docs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section work">
+    <div class="section__head" data-reveal>
+      <p class="section__kicker">Selected work</p>
+      <h2>Things I've built</h2>
+    </div>
+    <div class="work__grid">
+
+      <article class="work-card" data-reveal>
+        <div class="work-card__media" style="--from:#7c8cff;--to:#4b5bd6;">01</div>
+        <div class="work-card__body">
+          <h3>Project One</h3>
+          <p>One or two sentences describing the project, the problem it solved, and your role in it.</p>
+          <div class="tag-row">
+            <span class="tag">React</span><span class="tag">Node</span>
+          </div>
+          <div class="work-card__links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-reveal>
+        <div class="work-card__media" style="--from:#ff9d7c;--to:#d64b6b;">02</div>
+        <div class="work-card__body">
+          <h3>Project Two</h3>
+          <p>One or two sentences describing the project, the problem it solved, and your role in it.</p>
+          <div class="tag-row">
+            <span class="tag">TypeScript</span><span class="tag">API</span>
+          </div>
+          <div class="work-card__links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-reveal>
+        <div class="work-card__media" style="--from:#7cffd4;--to:#2fb38a;">03</div>
+        <div class="work-card__body">
+          <h3>Project Three</h3>
+          <p>One or two sentences describing the project, the problem it solved, and your role in it.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Data</span>
+          </div>
+          <div class="work-card__links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-reveal>
+        <div class="work-card__media" style="--from:#ffd27c;--to:#d69a2f;">04</div>
+        <div class="work-card__body">
+          <h3>Project Four</h3>
+          <p>One or two sentences describing the project, the problem it solved, and your role in it.</p>
+          <div class="tag-row">
+            <span class="tag">Design</span><span class="tag">Figma</span>
+          </div>
+          <div class="work-card__links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="section__head" data-reveal>
+      <p class="section__kicker">Experience</p>
+      <h2>Where I've worked</h2>
+    </div>
+    <ol class="timeline">
+      <li class="timeline__item" data-reveal>
+        <div class="timeline__dates">2025 — Present</div>
+        <div class="timeline__content">
+          <h3>Job Title <span>· Company Name</span></h3>
+          <p>Short description of your role, responsibilities, and a standout achievement or two.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-reveal>
+        <div class="timeline__dates">2023 — 2025</div>
+        <div class="timeline__content">
+          <h3>Job Title <span>· Company Name</span></h3>
+          <p>Short description of your role, responsibilities, and a standout achievement or two.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-reveal>
+        <div class="timeline__dates">2021 — 2023</div>
+        <div class="timeline__content">
+          <h3>Degree / Program <span>· School Name</span></h3>
+          <p>Relevant coursework, honors, or projects worth mentioning.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section__head" data-reveal>
+      <p class="section__kicker">Contact</p>
+      <h2>Let's build something</h2>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__info" data-reveal>
+        <p>
+          Have a project in mind, or just want to say hi? My inbox is open —
+          I try to reply within a couple of days.
+        </p>
+        <a class="contact__email" href="mailto:you@example.com">you@example.com</a>
+        <div class="hero__social contact__social">
+          <a href="https://github.com/yourhandle" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="https://x.com/yourhandle" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.5h3.31l-7.23 8.26 8.5 10.74h-6.66l-5.22-6.63-5.97 6.63H1.65l7.73-8.83L1.2 2.5h6.83l4.72 6.06 5.49-6.06Zm-1.16 17.02h1.83L7.02 4.38H5.06l12.02 15.14Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm" data-reveal>
+        <label>
+          Name
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="contact__note" id="contactNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Your Name. Built with care.</p>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
