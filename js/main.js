@@ -62,7 +62,7 @@
   sections.forEach((s) => sectionObserver.observe(s));
 
   /* Rotating hero word */
-  const words = ['websites', 'Minecraft servers', 'communities', 'brands'];
+  const words = ['websites', 'communities', 'platforms', 'brands'];
   const rotateEl = document.getElementById('rotate');
   if (rotateEl) {
     let i = 0;
