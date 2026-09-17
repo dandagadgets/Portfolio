@@ -8,6 +8,24 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canHover = window.matchMedia('(pointer: fine)').matches && !prefersReducedMotion;
 
+  /* Scroll progress bar */
+  const progressBar = document.getElementById('scrollProgressBar');
+  if (progressBar) {
+    let progressTicking = false;
+    const updateProgress = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+      progressBar.style.width = `${Math.min(Math.max(progress, 0), 100)}%`;
+      progressTicking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (progressTicking) return;
+      progressTicking = true;
+      requestAnimationFrame(updateProgress);
+    });
+    updateProgress();
+  }
+
   /* Theme: respect saved choice, else system preference */
   const stored = localStorage.getItem('theme');
   const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
@@ -164,6 +182,22 @@
           }
           ticking = false;
         });
+      });
+    }
+
+    const hero = document.getElementById('top');
+    const heroGlow = document.getElementById('heroGlow');
+    if (hero && heroGlow) {
+      hero.addEventListener('mousemove', (e) => {
+        const rect = hero.getBoundingClientRect();
+        const mx = ((e.clientX - rect.left) / rect.width) * 100;
+        const my = ((e.clientY - rect.top) / rect.height) * 100;
+        heroGlow.style.setProperty('--mx', `${mx.toFixed(1)}%`);
+        heroGlow.style.setProperty('--my', `${my.toFixed(1)}%`);
+        heroGlow.classList.add('is-active');
+      });
+      hero.addEventListener('mouseleave', () => {
+        heroGlow.classList.remove('is-active');
       });
     }
   }
