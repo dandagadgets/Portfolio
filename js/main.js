@@ -77,17 +77,6 @@
     rotateEl.style.transition = 'opacity 0.25s ease';
   }
 
-  /* Contact form (no backend wired up yet) */
-  const form = document.getElementById('contactForm');
-  const note = document.getElementById('contactNote');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      note.textContent =
-        "This form isn't connected to anything yet — wire it up to a service like Formspree, or point it at mailto:you@example.com.";
-    });
-  }
-
   /* Footer year */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

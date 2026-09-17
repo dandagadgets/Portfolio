@@ -7,7 +7,7 @@ A clean, modern, single-page portfolio site. No build step — plain HTML/CSS/JS
 ```
 index.html      All page content and sections
 css/style.css   Styling, theme (light/dark), layout
-js/main.js      Theme toggle, mobile nav, scroll reveal, contact form
+js/main.js      Theme toggle, mobile nav, scroll reveal
 ```
 
 ## Customize
@@ -21,13 +21,9 @@ Everything you need to change lives in `index.html`:
 - **Work** — project cards; each `.work-card__media` div holds an `<img>` pointing at a file
   in `assets/`, sized/cropped to the card's 16:10 aspect so nothing gets clipped by CSS
 - **Experience** — timeline entries
-- **Contact** — email address and social links (repeated in the hero and contact section)
+- **Contact** — an "Email me" button plus social links (repeated in the hero and contact section)
 
 Social links (Instagram/LinkedIn/X) and the contact email are already filled in.
-
-The contact form doesn't submit anywhere yet. Point its `action` at a form service like
-[Formspree](https://formspree.io) or [Getform](https://getform.io), or swap the JS handler in
-`js/main.js` for a `fetch()` call to your own backend.
 
 ## Run locally
 
