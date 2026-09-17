@@ -344,6 +344,7 @@ html[data-theme="light"] .theme-toggle .icon--moon { display: block; }
 .work-card__body p { color: var(--text-dim); font-size: 0.92rem; margin: 0 0 1rem; }
 .work-card__links { display: flex; gap: 1.2rem; margin-top: 1rem; font-size: 0.88rem; font-weight: 600; }
 .work-card__links a { color: var(--accent); }
+.work-card__soon { color: var(--text-dim); font-style: italic; font-weight: 500; }
 
 /* ---------- Experience / timeline ---------- */
 .timeline { list-style: none; margin: 0; padding: 0; }
