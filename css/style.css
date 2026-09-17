@@ -254,31 +254,6 @@ html[data-theme="light"] .theme-toggle .icon--moon { display: block; }
 }
 .hero__social a:hover { color: var(--accent); transform: translateY(-2px); }
 
-.hero__scroll {
-  position: absolute;
-  bottom: 2.2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.hero__scroll span {
-  width: 1px; height: 32px;
-  background: linear-gradient(var(--text-dim), transparent);
-  animation: scrollLine 1.8s ease-in-out infinite;
-}
-@keyframes scrollLine {
-  0% { opacity: 0; transform: scaleY(0.4); transform-origin: top; }
-  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-  100% { opacity: 0; transform: scaleY(0.4); transform-origin: bottom; }
-}
-
 /* ---------- Stats ---------- */
 .stats {
   max-width: var(--max-w);
@@ -495,7 +470,6 @@ html[data-theme="light"] .theme-toggle .icon--moon { display: block; }
 
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] { opacity: 1; transform: none; transition: none; }
-  .hero__scroll span { animation: none; }
   .status-badge__dot::after { animation: none; display: none; }
   html { scroll-behavior: auto; }
 }
