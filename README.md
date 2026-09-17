@@ -16,15 +16,14 @@ Everything you need to change lives in `index.html`:
 
 - **Title/meta** — `<title>` and `<meta name="description">` in `<head>`
 - **Hero** — your name, tagline, rotating words (also edit the `words` array in `js/main.js`)
-- **About** — bio paragraphs, quick facts, résumé link (`resume.pdf`, add the file yourself)
+- **About** — bio paragraphs, quick facts
 - **Skills** — tag pills grouped by category
-- **Work** — project cards; replace the numbered gradient placeholders with real screenshots by
-  swapping the `.work-card__media` div for an `<img>`, and update the live/code links
+- **Work** — project cards; each `.work-card__media` div holds an `<img>` pointing at a file
+  in `assets/`, sized/cropped to the card's 16:10 aspect so nothing gets clipped by CSS
 - **Experience** — timeline entries
 - **Contact** — email address and social links (repeated in the hero and contact section)
 
-Social links (GitHub/LinkedIn/X) and the contact email currently point to placeholder
-addresses (`yourhandle`, `you@example.com`) — search and replace them.
+Social links (Instagram/LinkedIn/X) and the contact email are already filled in.
 
 The contact form doesn't submit anywhere yet. Point its `action` at a form service like
 [Formspree](https://formspree.io) or [Getform](https://getform.io), or swap the JS handler in
