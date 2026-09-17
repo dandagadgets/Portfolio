@@ -197,6 +197,32 @@ html[data-theme="light"] .theme-toggle .icon--moon { display: block; }
   color: var(--text-dim);
   margin-bottom: 1.5rem;
 }
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: default;
+}
+.status-badge__dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2fb38a;
+  flex-shrink: 0;
+}
+.status-badge__dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1.5px solid #2fb38a;
+  animation: statusPulse 2s ease-out infinite;
+}
+@keyframes statusPulse {
+  0% { opacity: 0.8; transform: scale(0.5); }
+  100% { opacity: 0; transform: scale(1.8); }
+}
 .hero__title {
   font-size: clamp(2.2rem, 6vw, 3.6rem);
   letter-spacing: -0.02em;
@@ -470,6 +496,7 @@ html[data-theme="light"] .theme-toggle .icon--moon { display: block; }
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .hero__scroll span { animation: none; }
+  .status-badge__dot::after { animation: none; display: none; }
   html { scroll-behavior: auto; }
 }
 
